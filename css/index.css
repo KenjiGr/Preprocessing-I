@@ -135,11 +135,18 @@ body {
   height: 100%;
 }
 /*Font*/
+/*media mixin*/
 /*Main css*/
 .main-container {
   display: flex;
   flex-direction: column;
   /*main div*/
+  /*bottom container*/
+}
+.main-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 .main-container .navbar {
   display: flex;
@@ -149,7 +156,7 @@ body {
   text-decoration: none;
   font-family: 'Gelasio', sans-serif;
   font-size: 1.4rem;
-  margin: 10px;
+  margin: 1rem;
 }
 .main-container .main {
   display: flex;
@@ -168,12 +175,13 @@ body {
 }
 .main-container .main .box img {
   width: 25%;
-  margin: 10px;
+  margin: 1rem;
+  margin-left: 2.5rem;
 }
 .main-container .main .box h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 .main-container .main .box hr {
   width: 90%;
@@ -181,30 +189,72 @@ body {
 .main-container .main .box p {
   font-family: 'Gelasio', sans-serif;
   font-size: 1.2rem;
-  margin: 10px 0px 10px 35px;
+  margin: 1rem 0px 1rem 3.5rem;
 }
 .main-container .main .box button {
-  margin-left: 50px;
-  border-radius: 5px;
+  margin-left: 5rem;
+  border-radius: 0.5rem;
   background-color: #696969;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 .main-container .bottom {
   display: flex;
-  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
   width: 51%;
 }
 .main-container .bottom .more {
-  width: 50%;
-}
-.main-container .bottom .more h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  width: 48%;
 }
 .main-container .bottom .more p {
   font-family: 'Gelasio', sans-serif;
-  font-size: 1rem;
-  padding: 10px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-left: 0.3rem;
+}
+@media (max-width: 500px) {
+  .main-container .bottom .more {
+    width: 90%;
+  }
+}
+.main-container .bottom .list {
+  width: 48%;
+}
+.main-container .bottom .list li {
+  font-family: 'Gelasio', sans-serif;
+  font-size: 1.2rem;
+  border: 1px black double;
+  margin: 0.5rem;
+}
+.main-container .bottom .list h2 {
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 500px) {
+  .main-container .bottom .list {
+    width: 90%;
+  }
+}
+.main-container .bottom .history {
+  margin-top: 3rem;
+  width: 100%;
+}
+.main-container .bottom .history p {
+  font-family: 'Gelasio', sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-left: 0.3rem;
+}
+.main-container .bottom footer {
+  margin-top: 3rem;
+  width: 100%;
+}
+.main-container .bottom footer address {
+  font-family: 'Gelasio', sans-serif;
+  font-size: 0.8rem;
+}
+.main-container .bottom footer p {
+  margin-top: 4rem;
+  text-align: center;
 }
 /*main container*/
