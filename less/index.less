@@ -82,7 +82,7 @@ html, body {
 			text-decoration: none;
 			font-family: @p-font;
 			font-size: 1.4rem;
-			margin: 10px;
+			margin: 1rem;
 		}
 	}
 	.main{
@@ -103,38 +103,50 @@ html, body {
 			}
 			h1{
 			 .headfont(@head-font, 2.4rem);
-			 margin-left: 20px;
+			 margin-left: 2rem;
 			}
 			hr{
 			 width: 90%;	
 			}
 			p{
 			 .pfont(@p-font, 1.2rem);
-			 margin: 10px 0px 10px 35px;
+			 margin: 1rem 0px 1rem 3.5rem;
 			}
 			button{
-				margin-left: 50px;
-				border-radius: 5px;
+				margin-left: 5rem;
+				border-radius: 0.5rem;
 				background-color: #696969;
-				margin-bottom: 15px;
+				margin-bottom: 1.5rem;
 			}
 		}/*box div*/
 	}/*main div*/
 	.bottom{
 		display: flex;
-		margin-top: 30px;
+		margin-top: 3rem;
 		width: 51%;
-
+		
+		h2{
+			.headfont(@head-font, 1.2rem);
+			margin-bottom: 0.8rem;
+		}
 		.more{
 			width: 50%;
 
+			p{
+				.pfont(@p-font, 1.2rem);
+				padding: 1rem;
+			}
+		}
+
+		.list{
+
 			h2{
 				.headfont(@head-font, 1.2rem);
-				margin-bottom: 8px;
+				margin-bottom: 0.8rem;
 			}
-			p{
-				.pfont(@p-font, 1rem);
-				padding: 10px;
+			
+			li{
+				font-family: @p-font;
 			}
 		}
 	}
